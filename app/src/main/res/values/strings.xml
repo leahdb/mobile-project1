@@ -3,4 +3,7 @@
     <string name="player_1">PLAYER 1</string>
     <string name="player_2">PLAYER 2</string>
     <string name="current">CURRENT</string>
+    <string name="replay">🔃 replay</string>
+    <string name="roll">🎲 roll</string>
+    <string name="hold">📥 hold</string>
 </resources>

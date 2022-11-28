@@ -13,8 +13,17 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+            android:name=".Game1"
+            android:screenOrientation="landscape"
+        />
+        <activity
+            android:name=".Game2"
+            android:screenOrientation="landscape"
+        />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

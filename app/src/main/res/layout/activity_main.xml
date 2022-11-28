@@ -4,138 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6CBBFA"
+    android:background="#8CDBFF"
     tools:context=".MainActivity">
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card1"
-        android:layout_width="250dp"
-        android:layout_height="300dp"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="WELCOME! What do you feel like playing today"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/p1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|top"
-            android:layout_marginTop="50dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/player_1"
-            android:textColor="#000000"
-            android:textSize="20sp"
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome">
+
+        <ImageView
+            android:id="@+id/imggame1"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="55dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/game1" />
 
         <TextView
-            android:id="@+id/score1"
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|top"
-            android:layout_marginTop="80dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="DICE GAME"
             android:textColor="#000000"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
-        <androidx.cardview.widget.CardView
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btngame1"
             android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom|center"
-            android:layout_marginBottom="40dp"
-            app:cardBackgroundColor="#2196F3"
-            app:cardCornerRadius="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginTop="5dp"
-                android:text="@string/current"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/cur1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center"
-                android:layout_marginBottom="10dp"
-                android:text="0"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
-        </androidx.cardview.widget.CardView>
-
-
-
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="#FF4CAF50"
+            android:text="PLAY NOW"
+            android:textColor="#FFFFFF" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card2"
-        android:layout_width="250dp"
-        android:layout_height="300dp"
-        app:cardCornerRadius="10dp"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/card1"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toBottomOf="@+id/welcome">
 
-        <TextView
-            android:id="@+id/p2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|top"
-            android:layout_marginTop="50dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/player_2"
-            android:textColor="#000000"
-            android:textSize="20sp"
+        <ImageView
+            android:id="@+id/imggame2"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="55dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/game2" />
+
         <TextView
-            android:id="@+id/score2"
+            android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|top"
-            android:layout_marginTop="80dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="MEMORY GAME"
             android:textColor="#000000"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
-        <androidx.cardview.widget.CardView
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btngame2"
             android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom|center"
-            android:layout_marginBottom="40dp"
-            app:cardBackgroundColor="#2196F3"
-            app:cardCornerRadius="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginTop="5dp"
-                android:text="@string/current"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/cur2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center"
-                android:layout_marginBottom="10dp"
-                android:text="0"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
-        </androidx.cardview.widget.CardView>
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="#FF4CAF50"
+            android:text="PLAY NOW"
+            android:textColor="#FFFFFF" />
     </androidx.cardview.widget.CardView>
 
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
